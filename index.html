@@ -1934,7 +1934,7 @@ function showStatus(message, type = "info") {
 
 // ===== SIDEBAR ACTIONS =====
 function clearHistory() {
-    if (confirm("Clear local history? This won't affect Google Sheets logs.")) {
+    if (confirm("Clear local history?")) {
         localStorage.removeItem('multiToolHistory');
         localHistory = [];
         updateHistoryDisplay();
